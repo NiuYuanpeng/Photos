@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>房型</string>
+		<key>list</key>
+		<array>
+			<string>不限</string>
+			<string>一室</string>
+			<string>二室</string>
+			<string>三室</string>
+			<string>四室及以上</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>整租/合租</string>
+		<key>list</key>
+		<array>
+			<string>不限</string>
+			<string>整租</string>
+			<string>合租</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>个人/经纪人</string>
+		<key>list</key>
+		<array>
+			<string>不限</string>
+			<string>个人</string>
+			<string>经纪人</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>排序</string>
+		<key>list</key>
+		<array>
+			<string>默认排序</string>
+			<string>租金从低到高</string>
+			<string>租金从高到低</string>
+		</array>
+	</dict>
+</array>
+</plist>

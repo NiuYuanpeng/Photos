@@ -1,0 +1,33 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "model.h"
+#import "constants.h"
+//#import "YKSql.h"
+
+#define YKNavigationBarHeight ([[[UIDevice currentDevice] systemVersion] doubleValue]<7.0?44.0:64.0)//自定义navBar高度
+#define navBackBtnPath [[NSBundle mainBundle] pathForResource:@"返回" ofType:@"png"]//navBar返回按钮图片路径
+#define NavigationBarLineY ([[[UIDevice currentDevice] systemVersion] doubleValue]<7.0?0.0:0.0)//navBar下的蓝线Y
+#define DownLineY ([[[UIDevice currentDevice] systemVersion] doubleValue]<7.0?95.0:115.1)//tabBar上面的蓝线Y
+#define TopViewHeight 41.0//自定义搜索空间的高度
+#define OtherHeight ([[[UIDevice currentDevice] systemVersion] doubleValue]<7.0?44.0:64.0)//tableView高度计算中需要额外减去的部分
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define NetWorkAddress @"http://www.fungpu.com/houseapp/apprq.do"
+#define PictureAddress @"http://www.fungpu.com/houseapp/"
+
+#define CONTENT NSLocalizedString(@"TEXT_SHARE_CONTENT", @"ShareSDK不仅集成简单、支持如QQ好友、微信、新浪微博、腾讯微博等所有社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://sharesdk.cn @ShareSDK")
+#define SHARE_URL @"http://www.sharesdk.cn"
